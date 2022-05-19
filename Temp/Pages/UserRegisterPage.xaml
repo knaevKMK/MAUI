@@ -3,9 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Temp.Pages.UserRegisterPage"
              Title="UserRegisterPage">
-    <StackLayout>
-        <Label Text="Welcome to .NET MAUI!"
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Welcome, Please Register before continue"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
-    </StackLayout>
+
+            <Label Text="{Binding Username, StringFormat='Username: {0}'}"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Label Text="{Binding Email, StringFormat='Email: {0}'}"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Label Text="{Binding Gender, StringFormat='Gender: {0}'}"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Button
+                Clicked="Button_Clicked"
+                Text="Continue"
+                FontSize="Large"
+                HorizontalOptions="FillAndExpand"
+                />
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>
