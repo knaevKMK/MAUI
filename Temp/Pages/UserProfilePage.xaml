@@ -30,7 +30,7 @@
           
             
             <Button
-                Clicked="Button_Clicked"
+               
                 Text="Login"
                 FontSize="Large"
                 HorizontalOptions="FillAndExpand"

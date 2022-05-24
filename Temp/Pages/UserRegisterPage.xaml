@@ -23,7 +23,7 @@
                 HorizontalOptions="Center" />
 
             <Button
-                Clicked="Button_Clicked"
+              
                 Text="Continue"
                 FontSize="Large"
                 HorizontalOptions="FillAndExpand"

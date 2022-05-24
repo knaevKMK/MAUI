@@ -1,4 +1,6 @@
-﻿namespace Temp;
+﻿using Temp.Pages;
+
+namespace Temp;
 
 public partial class MainPage : ContentPage
 {
@@ -11,6 +13,8 @@ public partial class MainPage : ContentPage
 
 	private void OnCounterClicked(object sender, EventArgs e)
 	{
+		Shell.Current.GoToAsync(nameof(CountriesPhoneCodesPage));
+		return;
 		count++;
 
 		if (count == 1)
